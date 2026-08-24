@@ -5,7 +5,7 @@ import json
 
 dotenv.load_dotenv()
 
-# Creater a bucket policy
+# Create a bucket policy
 bucket_name = 'minio-s3-demo-bucket'
 bucket_policy = {
     'Version': '2012-10-17',
@@ -14,7 +14,7 @@ bucket_policy = {
         'Effect': 'Allow',
         'Principal': '*',
         'Action': ['s3:GetObject'],
-        'Resource': [f'arn:aws:s3:::{bucket_name}/*']
+        'Resource': [f'arn::s3:::{bucket_name}/*']
     }]
 }
 
