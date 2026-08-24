@@ -6,7 +6,7 @@ import json
 dotenv.load_dotenv()
 
 # Create a bucket policy
-bucket_name = 'minio-s3-demo-bucket'
+bucket_name = os.getenv('MINIO_BUCKET_NAME')
 bucket_policy = {
     'Version': '2012-10-17',
     'Statement': [{
