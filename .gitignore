@@ -1,2 +1,48 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Distribuição / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# === Variáveis de ambiente e credenciais ===
 .env
-assets
+.env.*
+!.env.example
+*.pem
+*.key
+
+# === MinIO ===
+# Dados persistidos do container (volume local)
+minio-data/
+.mc/
+
+# === Docker ===
+*.log
+
+# === Arquivos de teste/artefatos gerados nos exercícios ===
+# Downloads de teste feitos pelos scripts de exemplo
+*.downloaded
+upload_form.html
+
+# === Editor / SO ===
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# === Assets ===
+assets/
